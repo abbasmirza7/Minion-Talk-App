@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        #input-text {
+            display:block;
+            margin: 1rem;
+            padding: 1rem;
+            width:80%;
+        }
+        #output-text {
+            display:block;
+            margin: 1rem;
+            padding: 1rem;
+            width:80%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fun Talk</h1>
+    <textarea id="input-text" placeholder="Type your text here"></textarea>
+    <button id="btn">Translate</button>
+    <div>
+        <p>Your output will come here</p>
+        <div id="output-text"></div>
+    </div>
+    <script src="fta.js" type="text/javascript"></script>
+</body>
+</html>
