@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+    --primary-color: #FAE704;
+}
+
+body {
+    margin: 0px auto;
+    width: 100%;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-align: center;
+}
+
+.text {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    height: 5vh;
+    width: 50%;
+
+    
+}
+
+.output {
+    text-align: left;
+    margin-bottom: 2rem ;
+    border: 1px solid rgba(0, 0, 0, 0.938);
+}
+
+.covers {
+    background-color: var(--primary-color);
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+#btn {
+    margin: 2rem 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+}
+
+.about {
+    width: 50%;
+    margin: auto;
+}

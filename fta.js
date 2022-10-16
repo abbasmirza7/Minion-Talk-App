@@ -1,12 +1,12 @@
-var callURL = "https://myapi.abbasmirza1.repl.co/democall.json?name=";
-
-var inputText = document.quesrySelector("#input-text");
+var callURL = "https://api.funtranslations.com/translate/minion.json?text="
+var inputText = document.querySelector("#input-text");
 var button = document.querySelector("#btn");
-var outputText = document.querySelector("output-text");
+var outputText = document.querySelector("#output-text");
 
 
 function createURL(ourText) {
     return callURL + ourText;
+    console.log(callURL+ourText)
 }
 
 function errorHandler(error){
@@ -19,10 +19,10 @@ function clickHandler() {
     fetch(createURL(ourText))
         .then(response => response.json())
         .then(json => {
-            translatedText = json.Contents.Your-Name;
+            var translatedText = json.contents.translated;
             outputText.innerText = translatedText;
         })
         .catch(errorHandler)
 }
 
-button.addEventListner("click",clickHandler)
+button.addEventListener("click",clickHandler)
