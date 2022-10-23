@@ -17,8 +17,6 @@ body {
     padding: 1rem;
     height: 5vh;
     width: 50%;
-
-    
 }
 
 .output {
@@ -43,4 +41,8 @@ body {
 .about {
     width: 50%;
     margin: auto;
+}
+
+.sign {
+    display: inline;
 }
